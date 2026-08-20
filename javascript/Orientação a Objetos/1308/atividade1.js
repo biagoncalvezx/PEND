@@ -75,7 +75,6 @@ botaoCadastrar.addEventListener('click', function () {
         categoria.value, 
         Number(desconto.value)
     );
-
     produtos.adicionarProduto(produto);
     produtos.exibirNaTela();
 });
