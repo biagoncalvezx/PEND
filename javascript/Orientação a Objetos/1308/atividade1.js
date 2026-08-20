@@ -34,17 +34,25 @@ class Produtos {
         this.produtos.push(produto);
     }
 
+    excluirProduto(indice) {
+        this.produtos.splice(indice, 1);
+        this.exibirNaTela();
+    }
+
     exibirNaTela() {
         const resultado = document.querySelector('#resultado');
         resultado.innerHTML = "";
 
-        this.produtos.forEach(produto => {
+        this.produtos.forEach((produto, indice) => {
             resultado.innerHTML += `
             <div> 
                 <p>Nome: ${produto.nome}</p>
                 <p>Preço: R$ ${produto.aplicarDesconto().toFixed(2)}</p>
                 <p>Categoria: ${produto.categoria}</p>
                 <p>Desconto: ${produto.desconto}%</p>
+                <button onclick="produtos.excluirProduto(${indice})">
+                    Excluir
+                </button>
             </div>
             `;
         });
