@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff5f8;
+    margin: 0;
+    color: #555;
+}
+
+header {
+    background-color: #f8c8d8;
+    padding: 25px;
+    text-align: center;
+}
+
+h1 {
+    color: #a94469;
+    margin: 0;
+}
+
+header p {
+    color: #7d4a5d;
+}
+
+.container {
+    width: 800px;
+    max-width: 90%;
+    margin: 30px auto;
+}
+
+#atividades {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #e8b4c5;
+    border-radius: 8px;
+    margin-bottom: 25px;
+}
+
+#atividades h2 {
+    margin-top: 0;
+    color: #a94469;
+}
+
+.atividade {
+    display: inline-block;
+    background-color: #f5d1df;
+    border: 1px solid #d99ab3;
+    padding: 12px 20px;
+    margin: 5px;
+    border-radius: 20px;
+    cursor: grab;
+    color: #7d3f57;
+}
+
+.atividade:hover {
+    background-color: #efbfd1;
+}
+
+#rotina {
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #e8b4c5;
+    border-radius: 8px;
+}
+
+#rotina h2 {
+    color: #a94469;
+    text-align: left;
+    margin-top: 0;
+}
+
+.horario {
+    display: flex;
+    align-items: center;
+    background-color: #fffafd;
+    border-bottom: 1px solid #ead5dd;
+    min-height: 65px;
+    padding: 10px;
+}
+
+.horario strong {
+    display: inline-block;
+    width: 70px;
+    color: #a94469;
+    font-size: 16px;
+}
+
+.horario:hover {
+    background-color: #fff0f5;
+}
+
+#mensagem {
+    display: none;
+    background-color: #dff3e5;
+    color: #36734a;
+    padding: 12px;
+    text-align: center;
+    width: 500px;
+    max-width: 90%;
+    margin: 20px auto;
+    border-radius: 5px;
+}
