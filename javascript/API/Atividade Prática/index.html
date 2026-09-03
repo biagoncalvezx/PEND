@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Check-In Aula</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- contextualização: facilitar o registro de presença dos alunos durante as aulas. O aluno pode registrar sua localização atual e tirar uma foto usando a câmera. A localização mostra a latitude, a longitude e a precisão do local, enquanto a câmera permite registrar uma foto para confirmar a presença. Dessa forma, o sistema utiliza essas duas informações para ajudar a comprovar que o aluno está presente na aula. -->
+
+
+    <header>
+        <h1>Check-In Aula</h1>
+        <p>Confirme sua presença utilizando sua localização e câmera.</p>
+    </header>
+
+    <main>
+
+        <section class="localizacao">
+
+            <h2>Localização</h2>
+
+            <p>
+                Clique no botão para registrar sua localização atual.
+            </p>
+
+            <div class="informacoes">
+
+                <div>
+                    <label>Latitude</label>
+                    <span id="latitude">---</span>
+                </div>
+
+                <div>
+                    <label>Longitude</label>
+                    <span id="longitude">---</span>
+                </div>
+
+                <div>
+                    <label>Precisão</label>
+                    <span id="precisao">---</span>
+                </div>
+
+            </div>
+
+            <button id="btnLocalizacao">
+                Registrar localização
+            </button>
+
+            <p id="mensagemLocalizacao"></p>
+
+        </section>
+
+
+        <section class="camera-section">
+
+            <h2>Foto de presença</h2>
+
+            <p>
+                Permita o acesso à câmera para realizar o registro.
+            </p>
+
+            <div class="camera">
+
+                <video id="camera" autoplay playsinline></video>
+
+                <div id="mensagemCamera">
+                    Câmera desligada
+                </div>
+
+            </div>
+
+            <button id="btnCamera">
+                Abrir câmera
+            </button>
+
+            <button id="btnFoto" disabled>
+                Tirar foto
+            </button>
+
+            <canvas id="foto"></canvas>
+
+        </section>
+
+    </main>
+
+    <footer>
+        Registro de Presença
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

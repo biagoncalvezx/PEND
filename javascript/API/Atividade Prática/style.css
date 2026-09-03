@@ -1,0 +1,265 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #eee9f2;
+    color: #333;
+}
+
+
+/* HEADER */
+
+header {
+    background-color: #ffffff;
+    padding: 22px 8%;
+    border-bottom: 2px solid #ddd4e2;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+    color: #60456d;
+    font-size: 24px;
+}
+
+header p {
+    margin: 5px 0 0;
+    color: #888;
+    font-size: 13px;
+}
+
+
+/* ÁREA PRINCIPAL */
+
+main {
+    width: 85%;
+    max-width: 1000px;
+    margin: 40px auto;
+}
+
+
+/* TÍTULO */
+
+main::before {
+    content: "REGISTRO ONLINE";
+
+    display: block;
+    color: #80638e;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+}
+
+
+/* SEÇÕES */
+
+.localizacao,
+.camera-section {
+    background-color: white;
+
+    padding: 28px;
+
+    border-radius: 14px;
+
+    border: 1px solid #ddd5e1;
+
+    margin-bottom: 22px;
+}
+
+.localizacao h2,
+.camera-section h2 {
+    margin: 0;
+    color: #4e3b58;
+    font-size: 20px;
+}
+
+.localizacao > p,
+.camera-section > p {
+    margin: 8px 0 22px;
+    color: #858085;
+    font-size: 13px;
+}
+
+
+/* LOCALIZAÇÃO */
+
+.informacoes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+
+    margin-bottom: 20px;
+}
+
+.informacoes div {
+    padding: 17px;
+
+    background-color: #f5f1f7;
+
+    border-radius: 8px;
+
+    border-left: 4px solid #80638e;
+}
+
+.informacoes label {
+    display: block;
+
+    color: #8d858f;
+
+    font-size: 10px;
+    font-weight: bold;
+
+    margin-bottom: 9px;
+}
+
+.informacoes span {
+    color: #403844;
+
+    font-size: 13px;
+
+    word-break: break-word;
+}
+
+
+/* CÂMERA */
+
+.camera {
+    width: 100%;
+    height: 360px;
+
+    background-color: #302a33;
+
+    border-radius: 12px;
+
+    position: relative;
+    overflow: hidden;
+
+    margin: 20px 0;
+}
+
+video {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+#mensagemCamera {
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    color: #c5bec8;
+
+    font-size: 13px;
+
+    white-space: nowrap;
+}
+
+
+/* BOTÕES */
+
+button {
+    padding: 12px 20px;
+
+    border: 0;
+    border-radius: 7px;
+
+    background-color: #735985;
+
+    color: white;
+
+    font-size: 13px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    margin-right: 8px;
+}
+
+button:hover {
+    background-color: #5f486a;
+}
+
+button:disabled {
+    background-color: #c4c0c5;
+    color: #eee;
+
+    cursor: not-allowed;
+}
+
+
+/* MENSAGEM */
+
+#mensagemLocalizacao {
+    margin: 15px 0 0;
+
+    padding: 10px;
+
+    background-color: #f6f2f7;
+
+    border-radius: 6px;
+
+    color: #735985;
+
+    font-size: 12px;
+}
+
+
+/* CANVAS */
+
+canvas {
+    display: none;
+}
+
+
+/* RODAPÉ */
+
+footer {
+    text-align: center;
+
+    padding: 15px;
+
+    color: #918a94;
+
+    font-size: 11px;
+}
+
+
+/* RESPONSIVO */
+
+@media (max-width: 650px) {
+
+    header {
+        display: block;
+        text-align: center;
+    }
+
+    main {
+        width: 92%;
+        margin-top: 25px;
+    }
+
+    .informacoes {
+        grid-template-columns: 1fr;
+    }
+
+    .camera {
+        height: 280px;
+    }
+
+    button {
+        width: 100%;
+        margin: 5px 0;
+    }
+}
