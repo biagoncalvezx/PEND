@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,13 +12,23 @@
 
 <body>
 
-    <!-- contextualização: facilitar o registro de presença dos alunos durante as aulas. O aluno pode registrar sua localização atual e tirar uma foto usando a câmera. A localização mostra a latitude, a longitude e a precisão do local, enquanto a câmera permite registrar uma foto para confirmar a presença. Dessa forma, o sistema utiliza essas duas informações para ajudar a comprovar que o aluno está presente na aula. -->
-
+    <!--
+    Contextualização:
+    facilitar o registro de presença dos alunos durante as aulas.
+    O aluno pode registrar sua localização atual e tirar uma foto
+    usando a câmera. A localização mostra a latitude, a longitude
+    e a precisão do local, enquanto a câmera permite registrar uma
+    foto para confirmar a presença.
+    -->
 
     <header>
         <h1>Check-In Aula</h1>
-        <p>Confirme sua presença utilizando sua localização e câmera.</p>
+
+        <p>
+            Confirme sua presença utilizando sua localização e câmera.
+        </p>
     </header>
+
 
     <main>
 
@@ -75,13 +86,16 @@
 
             </div>
 
+
             <button id="btnCamera">
                 Abrir câmera
             </button>
 
+
             <button id="btnFoto" disabled>
                 Tirar foto
             </button>
+
 
             <canvas id="foto"></canvas>
 
@@ -89,11 +103,14 @@
 
     </main>
 
+
     <footer>
         Registro de Presença
     </footer>
 
+
     <script src="script.js"></script>
 
 </body>
+
 </html>

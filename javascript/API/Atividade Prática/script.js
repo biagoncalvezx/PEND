@@ -38,14 +38,12 @@ btnLocalizacao.addEventListener("click", function() {
 });
 
 
-
 const btnCamera = document.querySelector("#btnCamera");
 
 btnCamera.addEventListener("click", function() {
 
     navigator.mediaDevices.getUserMedia({
-        video: true,
-        audio: true
+        video: true
     })
 
     .then(function(stream) {
@@ -74,7 +72,6 @@ btnCamera.addEventListener("click", function() {
 });
 
 
-
 const btnFoto = document.querySelector("#btnFoto");
 
 btnFoto.addEventListener("click", function() {
@@ -94,6 +91,8 @@ btnFoto.addEventListener("click", function() {
         canvas.width,
         canvas.height
     );
+
+    canvas.style.display = "block";
 
     alert("Foto registrada com sucesso!");
 
